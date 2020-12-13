@@ -3,10 +3,9 @@
 /*--------------------------------------------------------*/
 
 :root {
-    --sp-background: #141414;
-    --sp-background-light: #1e1e1e;
-    --sp-color-light: #aaaaaa;
-    --sp-color-bright: #eeeeee;
+    /* Some redefines to improve readability later on */
+    --sp-background-light: var(--color0);
+    --foreground-dimmed: var(--color15);
 }
 
 /* latin */
@@ -59,7 +58,7 @@ body {
     justify-content: center; 
 }
 .lists div {
-    background-color: var(--sp-background);
+    background-color: var(--background);
     box-shadow: 0px 0px 5px 2px black;
     display: flex;
     flex-direction: column;
@@ -79,7 +78,7 @@ body {
     border-bottom: 2px solid;
 }
 .lists a, .lists a:visited, .lists a:link, .lists a:active {
-    color: var(--sp-color-light);
+    color: var(--foreground-dimmed);
     text-decoration: none;
     font-size: 26px;
     text-indent: 15px;
@@ -98,14 +97,14 @@ body {
     display: inline-block;
 }
 .lists a:hover {
-    color: var(--sp-color-bright) !important
+    color: var(--foreground) !important
 }
 #greeting {
     font-size: 32px;
-    color: var(--sp-color-bright);
+    color: var(--foreground);
 }
 #time {
-    color: var(--sp-color-light);
+    color: var(--foreground-dimmed);
     font-size: 28px;
 }
 
@@ -122,13 +121,13 @@ body {
     width: 700px;
     font-size: 20px;
 
-    background-color: var(--sp-background);
+    background-color: var(--background);
     border-radius: 10px;
     box-shadow: 0px 0px 5px 1px black;
 }
 #search_form > * {
     background-color: transparent;
-    color: var(--sp-color-bright);
+    color: var(--foreground);
     text-align: center;
     height: 50px;
     width: 50px;
@@ -158,8 +157,8 @@ body {
     border-top-right-radius: 10px;
 }
 #search_go:hover {
-    background-color: var(--sp-color-bright);
-    color: var(--sp-background);
+    background-color: var(--foreground);
+    color: var(--background);
 }
 
 /*--------------------------------------------------------*/
@@ -180,7 +179,7 @@ body {
 /* Animation */
 
 .waves-inner > use {
-    fill: var(--sp-background);
+    fill: var(--background);
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
 .waves-inner > use:nth-child(1) {
