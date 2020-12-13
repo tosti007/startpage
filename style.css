@@ -8,18 +8,8 @@
     --foreground-dimmed: var(--color15);
 }
 
-/* latin */
-@font-face {
-    font-family: 'Overpass Mono';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: local('Overpass Mono Light'), local('OverpassMono-Light'), url(Overpass_Mono.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 body {
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'InputSans Nerd Font', monospace;
     background-color: var(--sp-background-light);
     margin: 0;
     padding: 0;
@@ -73,14 +63,14 @@ body {
 }
 .lists p {
     color: inherit;
-    font-size: 35px;
+    font-size: 32px;
     margin: 0px 0px 20px 0px;
     border-bottom: 2px solid;
 }
 .lists a, .lists a:visited, .lists a:link, .lists a:active {
     color: var(--foreground-dimmed);
     text-decoration: none;
-    font-size: 26px;
+    font-size: 24px;
     text-indent: 15px;
     line-height: 1.5;
 }
@@ -100,12 +90,12 @@ body {
     color: var(--foreground) !important
 }
 #greeting {
-    font-size: 32px;
+    font-size: 30px;
     color: var(--foreground);
 }
 #time {
     color: var(--foreground-dimmed);
-    font-size: 28px;
+    font-size: 24px;
 }
 
 /*--------------------------------------------------------*/
@@ -119,7 +109,7 @@ body {
     justify-content: center;
     margin: 20px auto 60px;
     width: 700px;
-    font-size: 20px;
+    font-size: 18px;
 
     background-color: var(--background);
     border-radius: 10px;
