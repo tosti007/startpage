@@ -3,11 +3,10 @@
 /*--------------------------------------------------------*/
 
 :root {
-    --sp-background: rgb(20, 20, 20);
-    --sp-background-light: rgba(30, 30, 30);
-    --sp-color-normal: #3b4252;
-    --sp-color-light: #999;
-    --sp-color-bright: #dee3de /*#81a1c1*/;
+    --sp-background: #141414;
+    --sp-background-light: #1e1e1e;
+    --sp-color-light: #aaaaaa;
+    --sp-color-bright: #eeeeee;
 }
 
 /* latin */
