@@ -38,16 +38,18 @@ body {
     text-align: center;
 }
 @media all and (max-width: 550px) {
-    .info, hr
-    {
-        visibility: hidden;
-        margin: auto;
-    }
-    .watch, .social, .dev, .linux {
-        flex-direction: column;
-        width: auto;
+    #greeting-name {
+        display: none;
     }
 }
+
+@media all and (max-width: 350px) {
+    #greeting, hr   
+    {
+        visibility: hidden;
+    }
+}
+
 .lists {
     display: flex;
     flex-wrap: wrap;
@@ -116,13 +118,20 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px auto 60px;
-    width: 700px;
+    width: 750px;
     font-size: 18px;
 
     background-color: var(--sp-background);
     border-radius: 6px;
     border: solid var(--sp-background-dark) 8px;
 }
+
+@media screen and (max-width: 833px) {
+    #search_form {
+        width: 90vw;
+    }
+}
+
 #search_form > * {
     background-color: transparent;
     color: var(--sp-foreground);
