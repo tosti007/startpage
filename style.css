@@ -4,8 +4,11 @@
 
 :root {
     /* Some redefines to improve readability later on */
-    --sp-background-light: var(--color0);
-    --foreground-dimmed: var(--color15);
+    --sp-background-light: var(--color8);
+    --sp-background: var(--background);
+    --sp-background-dark: var(--color0);
+    --sp-foreground: var(--foreground);
+    --sp-foreground-dimmed: var(--color15);
 }
 
 body {
@@ -48,14 +51,14 @@ body {
     justify-content: center; 
 }
 .lists div {
-    background-color: var(--background);
+    background-color: var(--sp-background);
     border-radius: 6px;
-    border: solid var(--color8) 8px;
+    border: solid var(--sp-background-dark) 8px;
     display: flex;
     flex-direction: column;
     padding: 40px 0px;
     margin: 10px;
-    color: var(-sp-color-bright);
+    color: var(--sp-foreground);
     width: 275px;
 }
 .lists div > * {
@@ -69,7 +72,7 @@ body {
     border-bottom: 2px solid;
 }
 .lists a, .lists a:visited, .lists a:link, .lists a:active {
-    color: var(--foreground-dimmed);
+    color: var(--sp-foreground-dimmed);
     text-decoration: none;
     font-size: 24px;
     text-indent: 15px;
@@ -88,14 +91,14 @@ body {
     display: inline-block;
 }
 .lists a:hover {
-    color: var(--foreground) !important
+    color: var(--sp-foreground) !important
 }
 #greeting {
     font-size: 30px;
-    color: var(--foreground);
+    color: var(--sp-foreground);
 }
 #time {
-    color: var(--foreground-dimmed);
+    color: var(--sp-foreground-dimmed);
     font-size: 24px;
 }
 
@@ -112,13 +115,13 @@ body {
     width: 700px;
     font-size: 18px;
 
-    background-color: var(--background);
+    background-color: var(--sp-background);
     border-radius: 6px;
-    border: solid var(--color8) 8px;
+    border: solid var(--sp-background-dark) 8px;
 }
 #search_form > * {
     background-color: transparent;
-    color: var(--foreground);
+    color: var(--sp-foreground);
     text-align: center;
     height: 50px;
     width: 50px;
@@ -148,8 +151,8 @@ body {
     border-top-right-radius: 6px;
 }
 #search_go:hover {
-    background-color: var(--foreground);
-    color: var(--background);
+    background-color: var(--sp-foreground);
+    color: var(--sp-background);
 }
 
 /*--------------------------------------------------------*/
@@ -170,7 +173,7 @@ body {
 /* Animation */
 
 .waves-inner > use {
-    fill: var(--background);
+    fill: var(--sp-background);
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
 .waves-inner > use:nth-child(1) {
