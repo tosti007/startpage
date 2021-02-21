@@ -4,7 +4,6 @@
 
 :root {
     /* Some redefines to improve readability later on */
-    --sp-background-light: var(--color8);
     --sp-background: var(--background);
     --sp-background-dark: var(--color0);
     --sp-foreground: var(--foreground);
@@ -18,7 +17,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     font-family: 'InputSans Nerd Font', monospace;
-    background-color: var(--sp-background-light);
+    background-color: var(--sp-background);
     margin: 0;
     padding: 10vh 0;
 }
@@ -185,7 +184,7 @@ body {
 /* Animation */
 
 .waves-inner > use {
-    fill: var(--sp-background);
+    fill: var(--sp-background-dark);
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
 .waves-inner > use:nth-child(1) {
